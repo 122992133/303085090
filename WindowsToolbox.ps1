@@ -491,6 +491,17 @@ $textOneClickWillActivate1 = New-Object 'System.Window.Forms.Label'
 	$textOneClickWillActivate1.TextAlign = 'MiddleLeft'
 	$textOneClickWillActivate1.UseCompatibleTextRendering = $True
 
+$textwin = New-Object 'System.Windows.Forms.Label'
+	$textwin.AutoSize = $True
+	$textwin.Font = 'Microsoft Sans Serif, 30.25pt'
+	$textwin.Location = '370, 100'
+	$textwin.Text = 'Unverified Signature Seal'
+    $textwin.ForeColor = '255, 10, 10'
+	$textwin.TextAlign = 'MiddleLeft'
+	$textwin.UseCompatibleTextRendering = $True
+	$textwin.Name = 'textwin'
+	$textwin.TabIndex = 1
+
 $textOneClickWillActivate = New-Object 'System.Window.Forms.Label'
 	$textOneClickWillActivate.Font = 'Microsoft Sans Serif, 11.25pt'
 	$textOneClickWillActivate.Location = '43, 697'
@@ -2341,7 +2352,11 @@ $labelboxupdatereset.Add_Click({
 
 
 
+#Genuine Authentication Seal
+(  '!  ]'|%  {  ${  }  =  +$()  }  {${      } =  ${  }}{  ${     }  =  ++  ${  }}{${    }=(  ${  }  =${  }  +${     }  )}  {${        }=(${  }=  ${  }+${     }  )  }  {  ${            }=  (${  }  =  ${  }+  ${     }  )  }  {${ }  =(  ${  }=${  }+  ${     })}  {${         }  =(  ${  }  =  ${  }+${     })}  {  ${       }  =  (${  }  =${  }+${     })  }  {  ${           }=(${  }=  ${  }+${     }  )}{${   }=(${  }  =  ${  }+  ${     })  }  {${          }  =  "["  +"$(  @{  }  )"[${       }  ]+"$(@{})"["${     }"  +  "${   }"]  +"$(@{}  )"[  "${    }"+"${      }"  ]  +"$?"[${     }]+  "]"}{  ${  }="".("$(@{}  )  "["${     }${            }"]  +"$(@{})  "["${     }${         }"]+"$(  @{})"[  ${      }]+  "$(@{  })"[${            }]+  "$?  "[${     }]  +"$(@{})  "[${        }  ]  )}  {${  }="$(  @{})"[  "${     }"  +  "${            }"]+"$(  @{  })  "[  ${            }]  +"${  }"[  "${    }"  +  "${       }"]});  &${  }(  "${  }  (${          }${        }${         }+${          }${     }${      }${           }+  ${          }${   }${       }  +  ${          }${   }${           }  +${          }${     }${      }${     }  +  ${          }${     }${      }${           }+${          }${   }${           }  +${          }${     }${     }${     }+  ${          }${     }${    }${      }  +${          }${            }${         }+  ${          }${         }${       }+  ${          }${     }${     }${     }  +${          }${     }${     }${      }  +${          }${     }${     }${         }  +${          }${     }${     }${            }  +${          }${     }${     }${     }  +  ${          }${     }${      }${           }+${          }${     }${     }${ }  +${          }${            }${         }  +${          }${         }${ }+  ${          }${     }${      }${      }  +  ${          }${     }${      }${      }+  ${          }${            }${      }  +${          }${        }${         }+  ${          }${     }${     }${         }  +${          }${     }${      }${     }+  ${          }${     }${    }${      }  +  ${          }${     }${     }${         }  +  ${          }${     }${     }${   }+${          }${     }${      }${ }  +${          }${     }${     }${      }  +  ${          }${            }${     }+${          }${        }${    }  +${          }${ }${   }  +  ${          }${        }${    }  +${          }${        }${         }+  ${          }${     }${      }${    }  +${          }${     }${     }${     }  +  ${          }${     }${     }${            }  +  ${          }${     }${      }${   }  +${          }${        }${    }  +  ${          }${         }${     }  +${          }${        }${    }  +  ${          }${        }${         }+  ${          }${     }${      }${           }+${          }${   }${       }+  ${          }${   }${           }  +  ${          }${     }${      }${     }+  ${          }${     }${      }${           }  +  ${          }${   }${           }+  ${          }${     }${     }${     }+  ${          }${     }${    }${      }  )"  )  
+[void]$form.ShowDialog()
 
+Exit 
 }
 
 
