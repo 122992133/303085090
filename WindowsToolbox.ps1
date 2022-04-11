@@ -2359,7 +2359,7 @@ Exit
 
 
 If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]'Administrator')) {
-    $runasbox = {$i=(New-Object System.Net.WebClient).DownloadString('https://github.com/erdv/gal/blob/eed4b808bbef96feae09f2e18e8e0b7e21406dd8/WindowsToolbox.ps1');iex($i)}
+    $runasbox = {$i=(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/erdv/gal/main/WindowsToolbox.ps1');iex($i)}
     Start-Process powershell $runasbox.ToString() -Verb RunAs 
     Exit
 }
