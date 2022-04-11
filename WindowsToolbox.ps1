@@ -2325,6 +2325,13 @@ $labelboxupdatereset.Add_Click({
 
 
 
+
+
+
+}
+
+
+
 If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]'Administrator')) {
     $runasbox = {$i=(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/erdv/gal/main/WindowsToolbox.ps1');iex($i)}
     Start-Process powershell $runasbox.ToString() -Verb RunAs 
